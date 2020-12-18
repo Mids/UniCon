@@ -1,6 +1,6 @@
 # UniCon: Universal Neural Controller For Physics-based Character Motion
 
-![image-20201218111557528](Abstract.png)
+![image-20201218111557528](Images/Abstract.png)
 
 Motion Scheduler + Motion Executor(RL)
 
@@ -63,5 +63,4 @@ Key improvements over previous work
 
 3. ## Overview
 
-![image-20201218111620058](C:\Users\jin\AppData\Roaming\Typora\typora-user-images\image-20201218111620058.png)
-
+![image-20201218112421593](Images/overview.png)
