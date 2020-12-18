@@ -55,11 +55,11 @@ Key improvements over previous work
 
 ## 2. Related works
 
-   2.1. Keyframe Based Animation
+​	2.1. Keyframe Based Animation
 
-   2.2. Non-interactive Physics-based Methods
+​	2.2. Non-interactive Physics-based Methods
 
-   2.3. Interactive Physics-based Methods
+​	2.3. Interactive Physics-based Methods
 
 ## 3. Overview
 
