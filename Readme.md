@@ -14,7 +14,7 @@ physics-based virtual avatar
 
 SOTA over the DeepMimic
 
-1. ## Intro
+## 1. Intro
 
 Training Efficiency, Robustness, Motion Capacity, and generalizability.
 
@@ -53,7 +53,7 @@ Key improvements over previous work
 
   Our algorithm is better
 
-2. ## Related works
+## 2. Related works
 
    2.1. Keyframe Based Animation
 
@@ -61,20 +61,20 @@ Key improvements over previous work
 
    2.3. Interactive Physics-based Methods
 
-3. ## Overview
+## 3. Overview
 
 ![image-20201218112421593](Images/overview.png)
 
-4. ## Low Level Motion Executor
+## 4.  Low Level Motion Executor
 
-5. ## Training
+## 5. Training
 
-6. ## High Level Motion Scheduler
+## 6. High Level Motion Scheduler
 
-7. ## Environment
+## 7. Environment
 
-8. ## Experiments
+## 8. Experiments
 
-9. ## Interactive Applications
+## 9. Interactive Applications
 
-10. ## Conclusion And Discussion
+## 10. Conclusion And Discussion
