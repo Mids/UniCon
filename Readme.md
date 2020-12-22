@@ -55,11 +55,11 @@ Key improvements over previous work
 
 ## 2. Related works
 
-​	2.1. Keyframe Based Animation
+#### 	2.1. Keyframe Based Animation
 
-​	2.2. Non-interactive Physics-based Methods
+#### 	2.2. Non-interactive Physics-based Methods
 
-​	2.3. Interactive Physics-based Methods
+#### 	2.3. Interactive Physics-based Methods
 
 ## 3. Overview
 
@@ -67,65 +67,72 @@ Key improvements over previous work
 
 ## 4.  Low Level Motion Executor
 
-​	4.1. Observation Function
+#### 	4.1. Observation Function
 
-​	4.2. Controller
+Input Observation Function $s_t$ encodes information about both the current state $\tilde\chi_t$ and the target future state $[\chi_{t+1}, ..., \chi_{t+\tau}]$.
 
-​	4.3. Constrained Multiobjective Reward Optimization
+Generate the corresponding control signal as output
+
+ 
+
+
+#### 	4.2. Controller
+
+#### 	4.3. Constrained Multiobjective Reward Optimization
 
 ## 5. Training
 
-​	5.1. Motion Balancer
+#### 	5.1. Motion Balancer
 
-​	5.2. Reactive State Initialization Scheme
+#### 	5.2. Reactive State Initialization Scheme
 
-​	5.3. Policy Variance Controller
+#### 	5.3. Policy Variance Controller
 
 ## 6. High Level Motion Scheduler
 
-​	6.1. Motion Dataset Training Scheduler
+#### 	6.1. Motion Dataset Training Scheduler
 
-​	6.2. Video Stream Scheduler
+#### 	6.2. Video Stream Scheduler
 
-​	6.3. Keyboard Driven Interactive Control Scheduler
+#### 	6.3. Keyboard Driven Interactive Control Scheduler
 
-​	6.4. Motion Stitching Scheduler
+#### 	6.4. Motion Stitching Scheduler
 
 ## 7. Environment
 
-​	7.1. Physics Engine
+#### 	7.1. Physics Engine
 
-​	7.2. Humanoid Model
+#### 	7.2. Humanoid Model
 
 ## 8. Experiments
 
-​	8.1. Low-level Controller Baselines
+#### 	8.1. Low-level Controller Baselines
 
-​	8.2. Training Performance
+#### 	8.2. Training Performance
 
-​	8.3. Transfer Learning with Fine-tuning
+#### 	8.3. Transfer Learning with Fine-tuning
 
-​	8.4. Ablation Study on Low-Level Executor
+#### 	8.4. Ablation Study on Low-Level Executor
 
-​	8.5. Zero-Shot Robustness
+#### 	8.5. Zero-Shot Robustness
 
 ## 9. Interactive Applications
 
-​	9.1. Keyboard Driven Interactive Control
+#### 	9.1. Keyboard Driven Interactive Control
 
-​	9.2. Interactive Motion Stitching
+#### 	9.2. Interactive Motion Stitching
 
-​	9.3. Interactive Video Controlled Animation
+#### 	9.3. Interactive Video Controlled Animation
 
 ## 10. Conclusion And Discussion
 
-What we did
+#### What we did
 
 - optimization
 - motion balancing
 - variance control
 
-limitation
+#### limitation
 
 - quality
 - physical interaction
