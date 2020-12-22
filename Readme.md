@@ -85,9 +85,13 @@ Fully connected network
 
 #### 	4.3. Constrained Multiobjective Reward Optimization
 
-Reward function is same as DeepMimic
+Reward function is the same as DeepMimic
 
+Penalize all joints and root rotation end effector.
 
+Separated reward term.
+
+Early termination if one of the rewards is below 0.1
 
 ## 5. Training
 
