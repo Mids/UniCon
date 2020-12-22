@@ -73,12 +73,21 @@ Input Observation Function $s_t$ encodes information about both the current stat
 
 Generate the corresponding control signal as output
 
- 
-
+Use an agent-centric state encoding operator $T_{p^r},_{q^r}$, which transforms the quaternion, translation and the corresponding velocity with respect to the root $p^r ,q^r$.
 
 #### 	4.2. Controller
 
+Torque based controller
+
+Fully connected network 
+
+3 hidden layers of 1024 units
+
 #### 	4.3. Constrained Multiobjective Reward Optimization
+
+Reward function is same as DeepMimic
+
+
 
 ## 5. Training
 
