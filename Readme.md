@@ -95,11 +95,58 @@ Early termination if one of the rewards is below 0.1
 
 ## 5. Training
 
+Use PPO
+
+4096 workers
+
+64 samples per iteration per worker
+
 #### 	5.1. Motion Balancer
+
+Dataset is imbalanced.
+
+Motion label class
+
+**root-walking-forward-specialStyle-zombie**
+
+Uniformly sampling the motions.
 
 #### 	5.2. Reactive State Initialization Scheme
 
+over RSI in DeepMimic, we propose RSIS.
+
+the agent is initialized with a state of the frame k time-steps away from the actual target frame.
+
+includes a much larger noise added to the velocity and translation of the initialized state
+
+recovering skills can be learnt automatically without the need to train or adding
+
+5-10 time-steps which does not lead to early termination.
+
 #### 	5.3. Policy Variance Controller
+
+Avoiding bad local minima.
+
+In PPO, a trainable vector $\hat\sigma\in\mathbb{R}^{|a_t|}$ is used to represent the diagonal Gaussian policy standard deviation.
+
+Different joints require variance of different scales for a character.
+
+propose an adaptive variance update scheme as follows:
+$$
+\hat\sigma'\leftarrow\hat\sigma-\alpha_{lr}\nabla_{\hat\sigma}L_{PPO},\\
+\hat\sigma'\leftarrow
+\begin{cases}\begin{aligned}
+ \mathcal{Z}(\hat\sigma')&,&&l<\mathcal{L}\\
+ \hat\sigma'&,&&Else 
+\end{aligned}\end{cases}
+$$
+where $L_{PPO}$ is the loss, $\alpha_{lr}$ is the learning rate, and $l$ is the current PPO training iteration.
+
+Control iteration range from 0 to $\mathcal{L}$.
+
+$\mathcal{Z}$ is the operation where we linearly increase or decrease the log of each component of $\hat\sigma$ by the same amount.
+
+We preserve the learnt variance structure.
 
 ## 6. High Level Motion Scheduler
 
