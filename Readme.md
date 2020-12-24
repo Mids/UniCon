@@ -150,7 +150,26 @@ We preserve the learnt variance structure.
 
 ## 6. High Level Motion Scheduler
 
+$$
+[\chi_{t+1},\ ...,\chi_{t+\tau}]=\phi_\theta
+\Big(
+\{c_i\}^t_{i=t-\tau_c},\{\tilde\chi_i\}^t_{i=t-\tau_x},t
+\Big)
+$$
+
+$\tau$ future frames - 1 or 2
+
+$c_i, \tilde\chi_i$ control signals and actual robot state
+
+$\tau_c, \tau_x$ history length to consider
+
+$\theta$ the parameters or configurations of the scheduler
+
+![Table1](Images/Table1.png)
+
 #### 	6.1. Motion Dataset Training Scheduler
+
+
 
 #### 	6.2. Video Stream Scheduler
 
