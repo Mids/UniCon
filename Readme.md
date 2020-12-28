@@ -209,13 +209,21 @@ Feed back the state from low-level executor
 
 ![image-20201228203142317](Images/Fig6.png)
 
-
+User can specify the motion for the character
 
 ## 7. Environment
 
 #### 	7.1. Physics Engine
 
+The Simulator is similar to Gym.
+
+GPU-accelerated Flex physics engine.
+
 #### 	7.2. Humanoid Model
+
+20 rigid-bodies and 35 DOF
+
+the learned policy generalizes across different models.
 
 ## 8. Experiments
 
