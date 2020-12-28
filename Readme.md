@@ -200,10 +200,16 @@ $$
 [PFNN(Phase-functioned neural networks)](http://theorangeduck.com/page/phase-functioned-neural-networks-character-control) 
 
 ![image-20201228192508816](Images/Fig5.png)
-
-
+$$
+\chi_{t+1}=\phi_{\theta_{PFNN}}\Big(\chi_t,\{c_i\}^t_{t=t-\tau_c})
+$$
+Feed back the state from low-level executor
 
 #### 	6.4. Motion Stitching Scheduler
+
+![image-20201228203142317](Images/Fig6.png)
+
+
 
 ## 7. Environment
 
