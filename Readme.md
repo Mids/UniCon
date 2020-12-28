@@ -169,11 +169,39 @@ $\theta$ the parameters or configurations of the scheduler
 
 #### 	6.1. Motion Dataset Training Scheduler
 
+Data Preparation - CMU Mocap dataset - extremely unbalanced
 
+grouping via style and tasks
+
+Split test set in categories.
+
+Use motion balancer in 5.1
 
 #### 	6.2. Video Stream Scheduler
 
+We Use [3D Pose Estimation](https://openaccess.thecvf.com/content_CVPR_2020/html/Iqbal_Weakly-Supervised_3D_Human_Pose_Learning_via_Multi-View_Images_in_the_CVPR_2020_paper.html) $\mathcal{F}_{\theta_{CNN}}$
+
+Video Frame at $t+1$ as $\mathcal{I}_{t+1}$.
+
+Prediction:
+$$
+\mathcal{P}_{t+1}=\Big[p^r_{t+1},q^r_{t+1},p^r_{j+1},q^r_{j+1} \Big]= \mathcal{F}_{\theta_{CNN}}(\mathcal{I}_{t+1})
+$$
+UDP(User Datagram Protocol) system connects the animation engine and the pose-estimator, sending $\mathcal{P}_{t+1}$ in a real-time fashion.
+
+Video stream scheduler:
+$$
+\chi_{t+1}=\Big[\phi_{\theta_{CNN}}(\mathcal{I}_{t+1}),Interp\Big(\{\mathcal{P}^t_{i=t-\tau_i}\}\Big)\Big]
+$$
+![Fig4](Images/Fig4.png)
+
 #### 	6.3. Keyboard Driven Interactive Control Scheduler
+
+[PFNN(Phase-functioned neural networks)](http://theorangeduck.com/page/phase-functioned-neural-networks-character-control) 
+
+![image-20201228192508816](Images/Fig5.png)
+
+
 
 #### 	6.4. Motion Stitching Scheduler
 
