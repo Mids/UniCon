@@ -227,13 +227,39 @@ the learned policy generalizes across different models.
 
 ## 8. Experiments
 
+Our low-level executor performs better in almost every metric and exhibits zero-shot robustness to environment perturbations not seen during training.
+
 #### 	8.1. Low-level Controller Baselines
+
+Compared baselines
+
+- PD-based Method
+
+  Similar to [DReCon](https://montreal.ubisoft.com/en/drecon-data-driven-responsive-control-of-physics-based-characters/), except for the fact that DReCon uses an online motion matching system to generate target states, whereas we directly use the target states from the dataset. We also use similar hyper-parameters from DReCon.We show another simple variant of removing the actual state from the observation function and performing open-loop control, which we name as Kinematic-State baseline.
+
+- [[Chentanez et al. 2018]](https://dl.acm.org/doi/10.1145/3274247.3274506)
+
+  This is similar to PD-based methods, but the observation function of the policy network contains additional long-term information. A concatenation of future frames with 0, 4, 16, 64 time-step offsets are fed as observations into the tracking network, which outputs PD targets to control the humanoid. We do not include a separate recovery agent as in the original paper, since it can be applied to any algorithm being compared here.
+
+- DeepMicmic-Onehot and DeepMimic-Variable
+
+  The original DeepMimic algorithm supports multi-motion training through the use of a one-hot vector to encode motion information into the observation function, which we name as DeepMimic-Onehot. Since the number of motions during training can be quite large, we also include another variant called DeepMimic-Variable, where we feed the ID of the motion to the observation function.
 
 #### 	8.2. Training Performance
 
+![image-20201229161136566](Images/Fig7.png)
+
+![image-20201229161221971](Images/Fig8.png)
+
+![image-20201229161257971](Images/Fig9.png)
+
 #### 	8.3. Transfer Learning with Fine-tuning
 
+![image-20201229161335149](Images/Fig10.png)
+
 #### 	8.4. Ablation Study on Low-Level Executor
+
+
 
 #### 	8.5. Zero-Shot Robustness
 
