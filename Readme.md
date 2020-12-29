@@ -259,17 +259,32 @@ Compared baselines
 
 #### 	8.4. Ablation Study on Low-Level Executor
 
-
+![image-20201229162054668](Images/Fig11.png)
 
 #### 	8.5. Zero-Shot Robustness
+
+![image-20201229162935416](Images/Fig12.png)
+
+- Zero-shot Perturbation Robustness
+
+
+
+- Zero-shot Speed Robustness
+- Zero-shot Model Retargeting Robustness
 
 ## 9. Interactive Applications
 
 #### 	9.1. Keyboard Driven Interactive Control
 
+![image-20201229163102519](Images/Fig13.png)
+
 #### 	9.2. Interactive Motion Stitching
 
+![image-20201229163146162](Images/Fig15.png)
+
 #### 	9.3. Interactive Video Controlled Animation
+
+![image-20201229163205151](Images/Fig14.png)
 
 ## 10. Conclusion And Discussion
 
