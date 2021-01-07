@@ -201,7 +201,7 @@ $$
 
 ![image-20201228192508816](Images/Fig5.png)
 $$
-\chi_{t+1}=\phi_{\theta_{PFNN}}\Big(\chi_t,\{c_i\}^t_{t=t-\tau_c})
+\chi_{t+1}=\phi_{\theta_{PFNN}}\Big(\chi_t,\{c_i\}^t_{t=t-\tau_c}\Big)
 $$
 Feed back the state from low-level executor
 
@@ -235,7 +235,7 @@ Compared baselines
 
 - PD-based Method
 
-  Similar to [DReCon](https://montreal.ubisoft.com/en/drecon-data-driven-responsive-control-of-physics-based-characters/), except for the fact that DReCon uses an online motion matching system to generate target states, whereas we directly use the target states from the dataset. We also use similar hyper-parameters from DReCon.We show another simple variant of removing the actual state from the observation function and performing open-loop control, which we name as Kinematic-State baseline.
+  Similar to [DReCon](https://montreal.ubisoft.com/en/drecon-data-driven-responsive-control-of-physics-based-characters/), except for the fact that DReCon uses an online motion matching system to generate target states, whereas we directly use the target states from the dataset. We also use similar hyper-parameters from DReCon. We show another simple variant of removing the actual state from the observation function and performing open-loop control, which we name as Kinematic-State baseline.
 
 - [[Chentanez et al. 2018]](https://dl.acm.org/doi/10.1145/3274247.3274506)
 
